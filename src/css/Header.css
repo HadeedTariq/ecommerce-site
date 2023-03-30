@@ -1,0 +1,58 @@
+/* ~Nav-bar css */
+.nav-bar{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 8px;
+    background-image: linear-gradient(#5f2cb0,#2200ffa6);
+    color: white;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    z-index: 8;
+}
+.nav h1{
+    font-size: 23px;
+    font-weight: 400;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.ul li{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0 8px;
+    cursor: pointer;
+}
+.ul img{
+    width: 30px;
+    border-radius: 60px;
+    margin: 0 8px;
+}
+@media screen and (max-width:358px)  {
+    .nav{
+        flex-direction: column;
+        height: 58px;
+    }
+    .ul{
+        margin: 5px 0;
+    }
+    .nav h1{
+        font-size: 20px;
+    }
+    .ul li{
+        font-size: 16px;
+    }
+    .ul img{
+        width: 25px;
+    }
+}

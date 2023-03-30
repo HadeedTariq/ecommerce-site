@@ -1,0 +1,146 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+/* *  Side Bar css*/
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    height: 96vh;
+    border-right: 1px solid green;
+    width: 150px;
+    position: fixed;
+    background-color: rgba(209, 207, 207, 0.587);
+}
+.side-bar-component h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 15px 3px;
+    cursor: pointer;
+    font-family: 'Oxygen', sans-serif;
+    transition: 0.5s;
+    text-align: center;
+}
+.side-bar-component h3:hover{
+    color: blue;
+}
+.ham-bar{
+    z-index: 10;
+    position: fixed;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+.side-bar{
+    width: 100%;
+    background-color: #d6d6d6;
+    height: auto;
+    transition: 0.5s;
+}
+.ham-bar{
+    display: inline;
+}
+/* Todo  Main component css*/
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.products-column{
+    width: 315px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 3px 4px rgba(167, 166, 166, 0.613)
+}
+.products-column img{
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.products-column p{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.price-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.price-list strong{
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.price-list h3{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price-list h3 span{
+    margin: 0 6px;
+}
+.products-column button{
+    margin: 5px 0;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    background-color: aqua;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.products-column .remove{
+    background-color: red;
+}
+.display-toggle{
+    position: fixed;
+    top: 55px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(225, 238, 249);
+    border-radius: 3px;
+    padding: 8px;
+    box-shadow: 2px 2px 3px 4px rgba(191, 190, 190, 0.657);
+    transition: 0.5s;
+}
+.display-toggle p{
+    font-size: 15px;
+    margin: 0 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width:806px)  {
+    .products-column{
+        width: 250px;
+    }
+}
+@media screen and (max-width:624px) {
+    .side-bar{
+        width: 100%;
+        background-color: #d6d6d6;
+        height: auto;
+        transition: 0.5s;
+    }
+    .ham-bar{
+        display: inline;
+    }
+}
